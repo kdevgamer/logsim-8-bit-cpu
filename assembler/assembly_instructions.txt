@@ -1,0 +1,12 @@
+0x00 IN		reads input to A
+0x01 Out	wrights A to display
+0x02 Mov xx	loads intermediate number to A
+0x03 Swp	swaps register A and B
+0x04 Add	adds B to A, saves in A
+0x05 Sub	subtracts B from A, saves in A
+0x06 And	And on A and B, saves in A
+0x07 Or		Or on A and B, saves in A
+0x08 Xor	Xor on A and B, saves in A
+0x09 Not	Not on A
+0x0A Jmp xx	jumps to address
+0x0B Jz  xx	jumps to address, if zero flag is set

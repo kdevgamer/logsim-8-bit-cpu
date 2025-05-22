@@ -1,0 +1,10 @@
+put an assembly program into the program.asm file(view assembly_instructions.txt for the program instructions), run assembler.py, and then in logisim open output.bin in the rom
+
+
+EX:
+
+IN
+Swp
+IN
+Add
+Out
