@@ -11,6 +11,7 @@ INSTRUCTION_SET = {
     "Not": 0x9,
     "Jmp": 0xA,
     "Jz":  0xB,
+    "Nop": 0xC
 }
 
 NOP_BYTE = 0xC0

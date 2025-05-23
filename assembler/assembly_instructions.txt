@@ -10,3 +10,4 @@
 0x09 Not	Not on A
 0x0A Jmp xx	jumps to address
 0x0B Jz  xx	jumps to address, if zero flag is set
+0x0C Nop        no operation
