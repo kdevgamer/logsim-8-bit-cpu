@@ -3,8 +3,8 @@ put an assembly program into the program.asm file(view assembly_instructions.txt
 
 EX:
 
-IN
+Mov 1
 Swp
-IN
 Add
 Out
+Jmp 3
