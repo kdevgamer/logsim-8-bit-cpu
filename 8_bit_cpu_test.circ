@@ -20,7 +20,7 @@
     </tool>
     <tool name="Constant">
       <a name="value" val="0x0"/>
-      <a name="width" val="8"/>
+      <a name="width" val="4"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -29,7 +29,7 @@
     </tool>
     <tool name="Controlled Buffer">
       <a name="control" val="left"/>
-      <a name="width" val="8"/>
+      <a name="width" val="4"/>
     </tool>
     <tool name="Controlled Inverter">
       <a name="facing" val="north"/>
@@ -41,7 +41,11 @@
       <a name="width" val="4"/>
     </tool>
   </lib>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="RAM">
+      <a name="addrWidth" val="4"/>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5">
     <tool name="DipSwitch">
       <a name="number" val="14"/>
@@ -85,7 +89,7 @@
       <a name="size" val="30"/>
     </tool>
     <tool lib="1" name="OR Gate">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </tool>
     <tool lib="1" name="XOR Gate">
@@ -135,9 +139,6 @@
       <a name="label" val="Alu_output"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(1170,2250)" name="Tunnel">
-      <a name="label" val="Input_on"/>
-    </comp>
     <comp lib="0" loc="(1180,1100)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="ROM_DATA"/>
@@ -150,6 +151,9 @@
     <comp lib="0" loc="(1230,1240)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="ROM_OUT"/>
+    </comp>
+    <comp lib="0" loc="(1260,2260)" name="Tunnel">
+      <a name="label" val="Input_on"/>
     </comp>
     <comp lib="0" loc="(1290,1540)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -403,11 +407,11 @@
       <a name="facing" val="south"/>
       <a name="label" val="PC_COUNT"/>
     </comp>
-    <comp lib="0" loc="(2730,1860)" name="Tunnel">
-      <a name="label" val="Input_on"/>
-    </comp>
-    <comp lib="0" loc="(2830,1770)" name="Tunnel">
+    <comp lib="0" loc="(2700,1820)" name="Tunnel">
       <a name="label" val="Input_done"/>
+    </comp>
+    <comp lib="0" loc="(2720,1860)" name="Tunnel">
+      <a name="label" val="Input_on"/>
     </comp>
     <comp lib="0" loc="(850,1470)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -663,8 +667,8 @@
     <wire from="(1140,1420)" to="(1170,1420)"/>
     <wire from="(1150,2190)" to="(1150,2210)"/>
     <wire from="(1150,2190)" to="(1160,2190)"/>
-    <wire from="(1150,2230)" to="(1150,2250)"/>
-    <wire from="(1150,2250)" to="(1170,2250)"/>
+    <wire from="(1150,2230)" to="(1150,2260)"/>
+    <wire from="(1150,2260)" to="(1260,2260)"/>
     <wire from="(1160,540)" to="(1210,540)"/>
     <wire from="(1160,560)" to="(1260,560)"/>
     <wire from="(1160,580)" to="(1310,580)"/>
@@ -988,10 +992,8 @@
     <wire from="(2670,1850)" to="(2670,1860)"/>
     <wire from="(2670,1860)" to="(2690,1860)"/>
     <wire from="(2680,1810)" to="(2680,1820)"/>
-    <wire from="(2680,1820)" to="(2780,1820)"/>
-    <wire from="(2710,1860)" to="(2730,1860)"/>
-    <wire from="(2780,1770)" to="(2780,1820)"/>
-    <wire from="(2780,1770)" to="(2830,1770)"/>
+    <wire from="(2680,1820)" to="(2700,1820)"/>
+    <wire from="(2710,1860)" to="(2720,1860)"/>
     <wire from="(850,1470)" to="(860,1470)"/>
     <wire from="(850,1500)" to="(870,1500)"/>
     <wire from="(850,1530)" to="(880,1530)"/>
