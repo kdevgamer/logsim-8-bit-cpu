@@ -128,16 +128,11 @@
     </comp>
     <comp lib="0" loc="(1110,580)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Alu_output"/>
+      <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1140,1030)" name="Tunnel">
       <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="0" loc="(1170,1390)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="Alu_output"/>
-      <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1180,1100)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -664,7 +659,7 @@
     <wire from="(1100,2180)" to="(1100,2250)"/>
     <wire from="(1100,840)" to="(1100,950)"/>
     <wire from="(1130,2170)" to="(1160,2170)"/>
-    <wire from="(1140,1420)" to="(1170,1420)"/>
+    <wire from="(1140,1420)" to="(1200,1420)"/>
     <wire from="(1150,2190)" to="(1150,2210)"/>
     <wire from="(1150,2190)" to="(1160,2190)"/>
     <wire from="(1150,2230)" to="(1150,2260)"/>
@@ -675,8 +670,6 @@
     <wire from="(1160,600)" to="(1360,600)"/>
     <wire from="(1160,620)" to="(1410,620)"/>
     <wire from="(1160,640)" to="(1460,640)"/>
-    <wire from="(1170,1390)" to="(1170,1420)"/>
-    <wire from="(1170,1420)" to="(1200,1420)"/>
     <wire from="(1180,1100)" to="(1180,1170)"/>
     <wire from="(1180,1170)" to="(1190,1170)"/>
     <wire from="(1190,2180)" to="(1200,2180)"/>
