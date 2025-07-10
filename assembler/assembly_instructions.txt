@@ -11,3 +11,5 @@
 0x0A Jmp xx	jumps to address
 0x0B Jz  xx	jumps to address, if zero flag is set
 0x0C Nop        no operation
+0x0D RamW xx	Writes A to a Ram address
+0x0E RamR xx	Reads Ram address to A

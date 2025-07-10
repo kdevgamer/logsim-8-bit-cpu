@@ -11,7 +11,9 @@ INSTRUCTION_SET = {
     "Not": 0x9,
     "Jmp": 0xA,
     "Jz":  0xB,
-    "Nop": 0xC
+    "Nop": 0xC,
+    "RamW": 0xD,
+    "RamR": 0xE
 }
 
 NOP_BYTE = 0xC0
@@ -43,6 +45,10 @@ def assemble(lines):
         elif mnemonic == "IN":
             bytecode.append((opcode << 4) | 0x0)
             bytecode.append(0x00)
+            continue
+        elif mnemonic == "RamW" or mnemonic == "RamR":
+            bytecode.append((opcode << 4) | 0x0)
+            bytecode.append(NOP_BYTE)
             continue
 
         bytecode.append((opcode << 4) | operand)
